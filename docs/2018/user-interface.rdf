@@ -1,0 +1,24 @@
+rdf:RDF xmlns="http://purl.org/net/xamde/ns/os#" xmlns:base ="http://purl.org/net/xamde/ns/os" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:log="http://www.w3.org/2000/10/swap/log#" xmlns:os="http://purl.org/net/xamde/ns/os#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:s="http://www.schemaweb.info/schemas/meta/rdf/" xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#">
+  <owl:Ontology rdf:about="https://flarebyte.github.io/ontologies/2018/user-interface#">
+    <dc:title xml:lang="en-gb">Simple User Interface Vocabulary</dc:title>
+    <dc:description xml:lang="en-gb">Description of an user interface</dc:description>
+    <dc:created>2017-12-26</dc:created>
+    <dc:modified>2017-12-26</dc:modified>
+    <owl:versionInfo>0.1</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema" />
+    <owl:imports rdf:resource="http://www.w3.org/2002/07/owl" />
+  </owl:Ontology>
+  <rdfs:Class rdf:about="https://flarebyte.github.io/ontologies/2018/user-interface#Widget">
+    <rdfs:comment xml:lang="en-gb">Represent a widget.</rdfs:comment>
+    <rdfs:label xml:lang="en-gb">Widget</rdfs:label>
+    <vs:term_status>testing</vs:term_status>
+  </rdfs:Class>
+  <rdf:Property rdf:about="https://flarebyte.github.io/ontologies/2018/user-interface#label">
+    <rdfs:comment xml:lang="en-gb">Label for the widget.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://flarebyte.github.io/ontologies/2018/user-interface#Widget" />
+    <rdfs:label xml:lang="en-gb">label</rdfs:label>
+    <rdfs:range rdf:resource="https://flarebyte.github.io/ontologies/2018/user-interface#Widget" />
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rdf:Alt" />
+  </rdf:Property>
+</rdf:RDF>
